@@ -15,8 +15,10 @@ export default function Feedback() {
       setGood((state) => state + 1);
     } else if (event === "netural") {
       setNetural((state) => state + 1);
-    } else {
+    } else if (event === "bad") {
       setBad((state) => state + 1);
+    } else {
+      alert("Something wrong");
     }
   };
 
